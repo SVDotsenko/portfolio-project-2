@@ -1,0 +1,19 @@
+:root {
+  --bg-color: #000;
+  --orange-color: #ff9501;
+  --grey-color-1: #a6a6a6;
+  --grey-color-2: #4f4f4f;
+  --white-color: #fdfdfd;
+}
+
+.calc {
+  margin: 50px auto;
+  width: 300px;
+  height: 500px;
+  border-radius: 20px;
+  background: var(--bg-color);
+  color: var(--white-color);
+  font-family: Arial, serif;
+  padding: 18px;
+  box-shadow: 4px 4px 4px var(--grey-color-2);
+}
