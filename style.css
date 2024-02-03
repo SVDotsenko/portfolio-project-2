@@ -19,6 +19,18 @@
   box-shadow: 4px 4px 4px var(--grey-color-2);
 }
 
+.buttons {
+  display: grid;
+  grid-template-areas:
+    "ac plus-minus percent division"
+    "seven eigth nine multi"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+  grid-gap: 7px;
+  justify-items: center;
+}
+
 .btn {
   width: 60px;
   height: 60px;
