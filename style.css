@@ -43,6 +43,12 @@
   user-select: none;
 }
 
+.btn.zero {
+  grid-area: zero;
+  width: 100%;
+  border-radius: 34px;
+}
+
 .btn:hover {
   /*todo add transition*/
   filter: brightness(120%);
