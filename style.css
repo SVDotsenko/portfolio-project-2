@@ -3,6 +3,7 @@
   --orange-color: #ff9501;
   --grey-color-1: #a6a6a6;
   --grey-color-2: #4f4f4f;
+  --grey-color-3: #333;
   --white-color: #fdfdfd;
 }
 
@@ -16,4 +17,33 @@
   font-family: Arial, serif;
   padding: 18px;
   box-shadow: 4px 4px 4px var(--grey-color-2);
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  background: var(--grey-color-3);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:hover {
+  /*todo add transition*/
+  filter: brightness(120%);
+}
+
+.btn:active {
+  filter: brightness(90%);
+}
+
+.btn.bg-grey {
+  background: var(--grey-color-1);
+}
+
+.btn.bg-orange {
+  background: var(--orange-color);
 }
