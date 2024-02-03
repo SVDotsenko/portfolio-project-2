@@ -19,6 +19,21 @@
   box-shadow: 4px 4px 4px var(--grey-color-2);
 }
 
+.calc-screen {
+  height: 125px;
+  padding: 10px;
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  margin-bottom: 25px;
+}
+
+.calc-screen p {
+  text-align: right;
+  font-size: 4rem;
+  margin: 0;
+}
+
 .buttons {
   display: grid;
   grid-template-areas:
