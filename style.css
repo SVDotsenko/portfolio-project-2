@@ -29,9 +29,12 @@
 }
 
 .calc-screen p {
-  text-align: right;
-  font-size: 4rem;
+  max-height: 110px;
+  width: 100%;
+  font-size: 3rem;
   margin: 0;
+  word-wrap: anywhere;
+  overflow: auto;
 }
 
 .buttons {
