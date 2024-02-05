@@ -1,4 +1,3 @@
-// добавить медиа в цсс, убрать верхний отступ на мобильных устройсвах
 const arr = [];
 const display = document.querySelector('.calc-screen p');
 
