@@ -22,9 +22,9 @@ const dotValidator = () => {
 };
 
 document.querySelector('.buttons').onclick = event => {
-    const isZero = symbol => symbol == 0;
+    const isZero = symbol => symbol === '0';
     const isDigit = symbol => /[1-9]/.test(symbol);
-    const zeroValidator = () => arr[0] == 0 && arr.length === 1;
+    const zeroValidator = () => arr[0] === '0' && arr.length === 1;
     const concatSymbols = () => arr.length ? arr.join('') : '0';
     const currentSymbol = event.target.textContent.charAt(0) === 'X' ? '*' : event.target.textContent.charAt(0);
     const lastSymbol = arr.at(-1);
@@ -65,4 +65,4 @@ document.querySelector('.buttons').onclick = event => {
         }
     }
     console.log(arr);
-}
+};

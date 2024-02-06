@@ -1,0 +1,6 @@
+{
+    "esversion": 6,
+    "eqeqeq": false,
+    "evil": true,
+    "expr": true
+}
