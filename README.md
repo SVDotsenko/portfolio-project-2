@@ -11,7 +11,9 @@ This website is implemented only for education purpose.
 ## Features
 
 The calculator can do basic arithmetic operation,  +, -, *, /, %. Each operator works according mathematics rules except %.
-The operator % conduct remainder of the division. For example:
+The operator % conduct remainder of the division. 
+
+For example:
 
 5 % 4 = 1
 
@@ -19,7 +21,9 @@ The operator % conduct remainder of the division. For example:
 
 5 % 2 = 1
 
-Calculations are carried out taking into account the priority of operators which is accepted in mathematics. For example:
+Calculations are carried out taking into account the priority of operators which is accepted in mathematics. 
+
+For example:
 
 1 + 2 * 3 = 7
 
