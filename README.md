@@ -46,7 +46,7 @@ devtools device toolbar.
 - Accessibility  
   - I confirm that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools. 
 
-![lighthouse](images/readme/lighthouse.png)
+![lighthouse](images/lighthouse.png)
 
 ## Deployment
 
