@@ -1,9 +1,13 @@
 const arr = [];
 const display = document.querySelector('.calc-screen p');
 
-document.querySelector('.ac').onclick = () => {
-    display.textContent = '0';
-    arr.length = 0;
+/**
+ * Prints an error message to the DOM and clears it after a specified timeout.
+ * @param {string} message - The error message to be displayed.
+ */
+const printError = message => {
+    setTimeout(() => document.querySelector('.errors').textContent = '', 2000);
+    document.querySelector('.errors').textContent = message;
 };
 
 /**
@@ -67,14 +71,14 @@ document.querySelector('.buttons').onclick = event => {
 
     if (isZero(currentSymbol)) {//if the user pressed the zero button
         if (zeroValidator()) {
-            alert('You can not use two zero in succession');
+            printError('You can not use two zero in succession');
         } else {
             arr.push(currentSymbol);
             display.textContent = concatSymbols();
         }
     } else if (isDot(currentSymbol)) {//if the user pressed the dot button
         if (dotValidator()) {
-            alert('You can not use dot here');
+            printError('You can not use dot here');
         } else {
             arr.push(currentSymbol);
             display.textContent = concatSymbols();
@@ -94,10 +98,15 @@ document.querySelector('.buttons').onclick = event => {
                 display.textContent += `=${eval(concatSymbols())}`;
                 arr.length = 0;
             } catch (e) {
-                alert('This expression can not be calculated. Change it and try again.');
+                printError('This expression can not be calculated. Change it and try again.');
             }
         } else {
-            alert('The last symbol must be a number');
+            printError('The last symbol must be a number');
         }
     }
+};
+
+document.querySelector('.ac').onclick = () => {
+    display.textContent = '0';
+    arr.length = 0;
 };
