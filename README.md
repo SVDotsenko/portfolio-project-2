@@ -6,7 +6,7 @@ The main purpose of this site is demonstrate coding skills in JavaScript, HTML a
 
 This website is implemented only for education purpose.
 
-![Mockup](assets/images/desktop.png)
+![Mockup](assets/images/mockups.png)
 
 ## Features
 
